@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepp Web Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1 style="color: blue;">Prepp Clone</h1>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94.019"
+                        height="34.583" viewBox="0 0 940.019 349.583">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Rectangle_4101" width="940.019" height="349.583" fill="none"></rect>
+                            </clipPath>
+                            <clipPath id="clip-path-3">
+                                <rect id="Rectangle_4099" width="102.906" height="308.45"
+                                    transform="translate(0 34.363)" fill="none"></rect>
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20590" transform="translate(1330.76 12333)">
+                            <g id="Group_20588" transform="translate(-1330.76 -12333)">
+                                <g id="Group_20587" clip-path="url(#clip-path)">
+                                    <g id="Group_20586">
+                                        <g id="Group_20585" clip-path="url(#clip-path)">
+                                            <path id="Path_31590"
+                                                d="M118.369,0H26.516A26.516,26.516,0,0,0,0,26.513V240.391C5.914,189.966,48.794,203,100.8,203h2.108a101.213,101.213,0,0,0,71.772-29.734c32.773-32.773,43.238-87.846,6.667-140.483A86.189,86.189,0,0,0,118.384.011Z"
+                                                fill="#2e81f7"></path>
+                                            <g id="Group_20584" opacity="0.8">
+                                                <g id="Group_20583">
+                                                    <g id="Group_20582" clip-path="url(#clip-path-3)">
+                                                        <g id="Group_20581" opacity="0.8">
+                                                            <g id="Group_20580">
+                                                                <g id="Group_20579" clip-path="url(#clip-path-3)">
+                                                                    <path id="Path_31591"
+                                                                        d="M101.506,86.255C45.442,86.255,0,81.592,0,34.363V257.3c0,47.886,46.076,85.515,102.906,85.515V86.255Z"
+                                                                        fill="#2e81f7"></path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <path id="Path_31592"
+                                                d="M274.223,312.186c0,5.308-3.726,8.4-9.833,8.4H252.208V303.382h11.865a8.945,8.945,0,0,1,10.15,8.8M272.8,288.17c0,5.07-3.568,7.847-9.43,7.847H252.208V280.235h11.177c5.87,0,9.437,2.935,9.437,7.935Zm10.481,24.965a13.7,13.7,0,0,0-10.64-13.471,12.887,12.887,0,0,0,9.374-12.61c0-7.768-6.186-14.191-17.838-14.191h-21v55.1h22.039c11.256,0,18.067-6.423,18.067-14.824m30.993,4.438-12.285-33.287H291.926l17.2,42.993-8.876,21.208h9.35l26.793-64.209h-9.35ZM368.729,300.3A27.513,27.513,0,0,0,395.6,328.434q.636.015,1.272,0a26.2,26.2,0,0,0,25.606-16.485H411.62a15.394,15.394,0,0,1-14.745,8.638,18.589,18.589,0,0,1-18.941-18.231,18.4,18.4,0,0,1,.075-2.06,18.525,18.525,0,0,1,16.759-20.138,18.3,18.3,0,0,1,2.107-.073,15.394,15.394,0,0,1,14.745,8.638h10.861a26.262,26.262,0,0,0-25.606-16.564,27.56,27.56,0,0,0-28.138,26.97q-.012.584,0,1.167Zm109.87,5.791a21.541,21.541,0,0,0-20.524-22.512q-.875-.041-1.752-.009A21.539,21.539,0,0,0,434.007,304.3q-.033.888.008,1.777a21.3,21.3,0,0,0,19.947,22.562q.981.062,1.965.03A21.88,21.88,0,0,0,478.6,307.609q.028-.765,0-1.53Zm-35.352,0a13.009,13.009,0,0,1,12.917-14.674,13.214,13.214,0,0,1,13.163,14.666,13.447,13.447,0,0,1-12.087,14.682,13.1,13.1,0,0,1-1.313.063,12.914,12.914,0,0,1-12.68-14.745Zm48.277,21.872h9.034V269.3h-9.034Zm24.887,0h9.034V269.3h-9.034Zm43.278-36.783a11.343,11.343,0,0,1,12.177,10.444c.014.191.024.383.029.575H547.721a11.865,11.865,0,0,1,11.968-11.019m20.457,23.787h-9.754a10.574,10.574,0,0,1-10.283,6.106A12.017,12.017,0,0,1,547.665,309.5H581.04a27.917,27.917,0,0,0,.316-4.437,20.366,20.366,0,0,0-21.247-21.485,20.915,20.915,0,0,0-21.818,22.505,21.193,21.193,0,0,0,19.735,22.556q1.032.067,2.067.036a19.958,19.958,0,0,0,20.053-13.708m11.019-9.042a21.138,21.138,0,0,0,19.456,22.694q.575.044,1.151.056a18.747,18.747,0,0,0,15.141-7.293v7.293a11.633,11.633,0,0,1-12.206,13,12.173,12.173,0,0,1-12.443-7.61H593.3c1.108,9.675,9.754,15.458,21.406,15.458a19.774,19.774,0,0,0,21.358-20.845V284.286h-9.152v6.328a18.5,18.5,0,0,0-15.141-7.056,20.788,20.788,0,0,0-20.666,20.91q0,.728.059,1.453m35.748.158a13.567,13.567,0,0,1-12.334,14.7q-.453.041-.908.049A13.765,13.765,0,0,1,600.4,306.586q.012-.333.039-.665a13.4,13.4,0,0,1,12.247-14.463c.328-.027.658-.042.988-.045a13.542,13.542,0,0,1,13.286,13.794q-.007.436-.044.872m43.357-14.9a11.343,11.343,0,0,1,12.177,10.444c.015.191.024.383.029.575H658.3a11.865,11.865,0,0,1,11.968-11.019m20.457,23.787h-9.754a10.574,10.574,0,0,1-10.283,6.106A12.017,12.017,0,0,1,658.246,309.5h33.375a27.917,27.917,0,0,0,.316-4.437,20.366,20.366,0,0,0-21.247-21.485,20.915,20.915,0,0,0-21.818,22.505,21.192,21.192,0,0,0,19.736,22.555q1.028.069,2.058.037a19.957,19.957,0,0,0,20.061-13.708m11.011-9.042a21.137,21.137,0,0,0,19.456,22.693q.579.045,1.159.057a18.107,18.107,0,0,0,15.141-7.293v6.581h9.113V269.3h-9.113v21.082a20.111,20.111,0,0,0-15.03-6.819,20.8,20.8,0,0,0-20.783,20.826q0,.765.057,1.529m35.748.158a13.567,13.567,0,0,1-12.333,14.7c-.3.026-.6.042-.9.048a13.765,13.765,0,0,1-13.274-14.238q.012-.333.039-.665a13.4,13.4,0,0,1,12.247-14.463q.494-.041.988-.045a13.542,13.542,0,0,1,13.286,13.794q-.008.436-.044.872Zm64.526-21.8h-9.034V308.61a10.591,10.591,0,0,1-11.019,12.135c-6.582,0-10.94-4.121-10.94-12.127V284.286h-8.955v25.685a17.071,17.071,0,0,0,18,18.621,16.257,16.257,0,0,0,12.918-5.861v5.228h9.034Zm46.854,43.681h8.955V302.2A17.005,17.005,0,0,0,839.9,283.566a16.8,16.8,0,0,0-13,5.7v-4.991h-9.033v43.681h9.033V303.548a10.592,10.592,0,0,1,11.02-12.135c6.581,0,10.94,4.121,10.94,12.127Zm24.412,0h9.034V284.286h-9.034Zm4.6-49.464a5.7,5.7,0,0,0,5.7-5.7c0-.029,0-.058,0-.087a5.7,5.7,0,0,0-5.615-5.79h-.088a5.719,5.719,0,0,0-5.783,5.655v.136a5.72,5.72,0,0,0,5.648,5.79q.067,0,.135,0m17.284,27.426a21.113,21.113,0,0,0,19.4,22.7c.348.027.7.046,1.046.055a18.8,18.8,0,0,0,15.3-7.214v6.5h9.113V284.286h-9.113v6.328a18.587,18.587,0,0,0-15.141-7.048A20.788,20.788,0,0,0,895.1,304.477q0,.723.058,1.444m35.748.158a13.567,13.567,0,0,1-12.333,14.7c-.3.026-.6.042-.9.048a13.764,13.764,0,0,1-13.282-14.23q.012-.338.039-.673a13.4,13.4,0,0,1,12.247-14.463q.493-.041.988-.045a13.542,13.542,0,0,1,13.286,13.794q-.008.436-.044.872"
+                                                fill="#2e81f7"></path>
+                                            <path id="Path_31593"
+                                                d="M330.887,2.064a44.807,44.807,0,0,1,6.282.359c1.884.269,3.5.538,4.756.808,1.525.269,2.961.538,4.217.807V57.431q-2.287-.807-5.384-1.884a44.676,44.676,0,0,0-6.1-1.346,50.005,50.005,0,0,0-7.628-.538c-9.691,0-17.5,3.14-23.421,9.512-6.012,6.371-8.974,15.255-8.974,26.741v89.647a51.51,51.51,0,0,1-51.508-51.509V26.742a22.709,22.709,0,0,1,43.791-8.436l1.885,4.756a52.835,52.835,0,0,1,11.037-10.319A57.114,57.114,0,0,1,313.029,5.3a46.907,46.907,0,0,1,17.858-3.231"
+                                                fill="#2e81f7"></path>
+                                            <path id="Path_31594"
+                                                d="M528.846,127.875a80.794,80.794,0,0,1-10.32,20.64,78.245,78.245,0,0,1-17.14,17.767,83.483,83.483,0,0,1-23.87,12.384,95.9,95.9,0,0,1-30.689,4.577,80.976,80.976,0,0,1-33.741-7.09,87.546,87.546,0,0,1-27.819-19.472A95.83,95.83,0,0,1,366.153,127.7a91.743,91.743,0,0,1-7.089-36.074,90.484,90.484,0,0,1,7.089-36.075A90.96,90.96,0,0,1,413.893,7.09a89.926,89.926,0,0,1,68.469-.629,81.195,81.195,0,0,1,27.28,18.486,87.747,87.747,0,0,1,18.306,28.985c4.487,11.307,6.641,23.87,6.641,37.6a42.022,42.022,0,0,1-.359,5.922c-.269,1.885-.538,3.769-.808,5.564-.269,2.064-.538,3.948-.807,5.743H412.457q3.1,9.961,12.384,18.306c6.192,5.564,14.178,8.436,23.87,8.436A38.592,38.592,0,0,0,461.1,133.8a28.839,28.839,0,0,0,8.166-4.038,18.751,18.751,0,0,0,6.1-5.744ZM448.711,47.83c-9.692,0-17.588,2.872-23.87,8.615a41.834,41.834,0,0,0-12.384,20.011h72.508a41.834,41.834,0,0,0-12.384-20.011C466.3,50.7,458.4,47.83,448.711,47.83"
+                                                fill="#2e81f7"></path>
+                                            <path id="Path_31595"
+                                                d="M654.3,2.064A76.649,76.649,0,0,1,685.616,8.7,80.508,80.508,0,0,1,711.729,27.37a91.356,91.356,0,0,1,17.947,28.446,93.619,93.619,0,0,1,6.641,35.895,95.348,95.348,0,0,1-6.641,35.9,92.41,92.41,0,0,1-17.947,28.446,81.091,81.091,0,0,1-26.113,18.665,75.229,75.229,0,0,1-31.318,6.641,71.08,71.08,0,0,1-18.127-2.244,66.2,66.2,0,0,1-13.909-5.384,62.652,62.652,0,0,1-11.846-7.627v74.391a51.51,51.51,0,0,1-51.509-51.508V27.1a23.116,23.116,0,0,1,44.241-9.423l1.525,3.41a62.643,62.643,0,0,1,13.371-9.512,93.26,93.26,0,0,1,15.614-6.461A64.371,64.371,0,0,1,654.3,2.064m30.51,89.647c0-12.473-3.679-22.524-11.038-30.331a37.311,37.311,0,0,0-54.2,0c-7.358,7.717-11.037,17.858-11.037,30.331s3.679,22.614,11.037,30.331a37.311,37.311,0,0,0,54.2,0c7.359-7.807,11.038-17.858,11.038-30.331"
+                                                fill="#2e81f7"></path>
+                                            <path id="Path_31596"
+                                                d="M858,2.064A76.649,76.649,0,0,1,889.318,8.7,80.508,80.508,0,0,1,915.431,27.37a91.375,91.375,0,0,1,17.947,28.446,93.619,93.619,0,0,1,6.641,35.895,95.346,95.346,0,0,1-6.641,35.9,92.429,92.429,0,0,1-17.947,28.446,81.091,81.091,0,0,1-26.113,18.665A75.229,75.229,0,0,1,858,181.358a71.081,71.081,0,0,1-18.127-2.244,66.178,66.178,0,0,1-13.909-5.384,62.656,62.656,0,0,1-11.846-7.627v74.391a51.51,51.51,0,0,1-51.509-51.508V27.1a23.116,23.116,0,0,1,44.241-9.423l1.525,3.41a62.641,62.641,0,0,1,13.371-9.512A93.26,93.26,0,0,1,837.36,5.115,64.371,64.371,0,0,1,858,2.064m30.51,89.647c0-12.473-3.679-22.524-11.038-30.331a37.311,37.311,0,0,0-54.2,0c-7.358,7.717-11.037,17.858-11.037,30.331s3.679,22.614,11.037,30.331a37.311,37.311,0,0,0,54.2,0c7.359-7.807,11.038-17.858,11.038-30.331"
+                                                fill="#2e81f7"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> -->
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item dropdown">
+                        <a style="border: 1px solid; padding: 10px 10px;" class="nav-link dropdown-toggle" href="#"
+                            role="button" aria-expanded="false">Explore Exams</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">UPSC</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item"> IAS Exam</a></li>
+                                    <li><a href="#" class="dropdown-item">UPSC</a></li>
+                                    <li><a href="#" class="dropdown-item">UPSC CMS</a></li>
+                                    <li><a href="#" class="dropdown-item">UPSC EPFO</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">SSC</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">MPPEB Vyapam</a></li>
+                                    <li><a href="#" class="dropdown-item">RSMSSB LDC</a></li>
+                                    <li><a href="#" class="dropdown-item">OSSSC Group C</a></li>
+                                    <li><a href="#" class="dropdown-item">CG Vyapam Recruitment</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">State PSC</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">TNPSC</a></li>
+                                    <li><a href="#" class="dropdown-item">BPSC</a></li>
+                                    <li><a href="#" class="dropdown-item">UPPSC</a></li>
+                                    <li><a href="#" class="dropdown-item">MPSC</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Teaching</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">CTET</a></li>
+                                    <li><a href="#" class="dropdown-item">UPTET</a></li>
+                                    <li><a href="#" class="dropdown-item">MH SET</a></li>
+                                    <li><a href="#" class="dropdown-item">Gujrat TET</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Railways</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">RRB NTPC</a></li>
+                                    <li><a href="#" class="dropdown-item">RRB Recruitment</a></li>
+                                    <li><a href="#" class="dropdown-item">RRB JE</a></li>
+                                    <li><a href="#" class="dropdown-item">RPF Constable</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Defence</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">SSB Constable</a></li>
+                                    <li><a href="#" class="dropdown-item">BSF Constable</a></li>
+                                    <li><a href="#" class="dropdown-item">Indian Navy SSR AA</a></li>
+                                    <li><a href="#" class="dropdown-item">CRPF Constable</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Banking</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">SBI PO</a></li>
+                                    <li><a href="#" class="dropdown-item">IBPS PO</a></li>
+                                    <li><a href="#" class="dropdown-item">RBI Grade B</a></li>
+                                    <li><a href="#" class="dropdown-item">SBI Clerk</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Scholarship</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">KVPY</a></li>
+                                    <li><a href="#" class="dropdown-item">NTSE</a></li>
+                                    <li><a href="#" class="dropdown-item">Scholarship</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Police</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">Karnataka Police Constable</a></li>
+                                    <li><a href="#" class="dropdown-item">AP Police Constable</a></li>
+                                    <li><a href="#" class="dropdown-item">MP Police SI</a></li>
+                                    <li><a href="#" class="dropdown-item">Maharashtra Police Constable</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Insurance</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">LIC AAO</a></li>
+                                    <li><a href="#" class="dropdown-item">LIC ADO</a></li>
+                                    <li><a href="#" class="dropdown-item">NICL</a></li>
+                                    <li><a href="#" class="dropdown-item">Insurance</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">PSU Recruitment</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">AAI JE ATC</a></li>
+                                    <li><a href="#" class="dropdown-item">DMER Recruitment</a></li>
+                                    <li><a href="#" class="dropdown-item">PSU Recruitment</a></li>
+                                    <li><a href="#" class="dropdown-item">GATE</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="submenu-toggle">Nursing</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="dropdown-item">AIIMS Nursing Officer</a></li>
+                                    <li><a href="#" class="dropdown-item">Nursing</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Test Series</a></li>
+                    <li><a href="#"><svg class="me-1" fill="#ff0000" width="15" xmlns="http://www.w3.org/2000/svg"
+                                height="24" viewBox="0 -960 960 960">
+                                <path
+                                    d="M480-280q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z">
+                                </path>
+                            </svg>Live Tests</a></li>
+                    <li><a href="#">Prev. Papers</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#"><svg class="me-1" fill="#ff0000" width="15" xmlns="http://www.w3.org/2000/svg"
+                                height="24" viewBox="0 -960 960 960">
+                                <path
+                                    d="M480-280q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z">
+                                </path>
+                            </svg>LIve Quizzes</a></li>
+                    <li><a href="#">News</a></li>
+                    <li>
+                        <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" width="19.96" height="19.96"
+                            viewBox="0 0 19.96 19.96">
+                            <g id="Icon_feather-search" transform="translate(-3.6 -3.6)">
+                                <path id="Path_4660"
+                                    d="M20.311,12.405A7.905,7.905,0,1,1,12.405,4.5a7.905,7.905,0,0,1,7.905,7.905Z"
+                                    fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.8"></path>
+                                <path id="Path_4661" d="M29.274,29.274l-4.3-4.3" transform="translate(-6.987 -6.987)"
+                                    fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.8"></path>
+                            </g>
+                        </svg>
+                    </li>
+                    <div id="search-popup" class="search-popup">
+                        <br>
+                        <br>
+                        <form class="form-inline">
+                            <input class="form-control" type="search"
+                                placeholder="Search for Quizzes, mock test & study..." aria-label="Search">
+                        </form>
+                        <hr>
+                        <ul style="list-style: none;">
+                            <li>
+                                <h6>Trending Searches </h6>
+                            </li>
+                            <li>SSC CGL</li>
+                            <li>IBPS PO</li>
+                            <li>CBSE UGC NET</li>
+                            <li> CTET</li>
+                            <li>UPTET</li>
+                        </ul>
+
+                    </div>
+                    <button class="btn">Login/Register</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid hero-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="hero-content">
+                    <h1>Your Personal Government Exam Guide</h1>
+                    <p>Start Your Journey With Free Videos, Test Series, Quizzes, Notes, & Information About Government
+                        Exams</p>
+                    <div class="row">
+                        <div class="col-md-3 nda">
+                            <p>NDA</p>
+                            <div class="date">
+                                <p style="text-align: center; font-size:medium; display: block;">
+                                    Exam Date: 21st April 2024</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 cds">
+                            <p>CDS</p>
+                            <div class="date">
+                                <p style="text-align: center; font-size:medium; display: block;">
+                                    Exam Date: 21st April 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="hero-image">
+                    <svg style="width: 600px; height: 200px;" xmlns="http://www.w3.org/2000/svg" width="213.773"
+                        height="166.977" viewBox="0 0 213.773 166.977">
+                        <g id="Group_20569" transform="translate(-769 -108.77)">
+                            <g id="Group_18176" transform="translate(769 93)">
+                                <ellipse id="Ellipse_466" cx="106.887" cy="2.878" rx="106.887" ry="2.878"
+                                    transform="translate(0 156.219)" fill="#eaf4ff"></ellipse>
+                                <g id="Group_18093" transform="translate(24.869 15.77)">
+                                    <g id="Group_18102" transform="translate(95.032) rotate(8)">
+                                        <path id="Path_7022_-_Outline"
+                                            d="M11.181,14.823,0,4.031,1.945,2.01A6.815,6.815,0,0,1,6.927,0a8.144,8.144,0,0,1,5.6,2.215c2.984,2.872,3.264,7.819.6,10.587ZM.467,4.022,11.172,14.355l1.721-1.783C15.435,9.932,15.159,5.2,12.3,2.453A7.809,7.809,0,0,0,6.927.331,6.488,6.488,0,0,0,2.183,2.239Z"
+                                            transform="translate(0 0)" fill="#ffcf2d"></path>
+                                        <g id="Group_18101" transform="translate(0.233 0.164)">
+                                            <path id="Path_7022"
+                                                d="M10.943,14.424,0,3.861l1.83-1.9c2.7-2.8,7.552-2.481,10.353.21h0c2.8,2.7,3.291,7.553.6,10.353Z"
+                                                transform="translate(0 0)" fill="#fff"></path>
+                                            <path id="Line_414"
+                                                d="M11.114,10.893A.165.165,0,0,1,11,10.847L.051.284A.165.165,0,0,1,.28.046L11.229,10.609a.165.165,0,0,1-.115.284Z"
+                                                transform="translate(1.66 1.794)" fill="#ffcf2d"></path>
+                                        </g>
+                                    </g>
+                                    <path id="Path_7023"
+                                        d="M3306.5,533.851a.163.163,0,0,1-.068-.015.165.165,0,0,1-.083-.219l15.355-34.246-30.013-36.537a3.537,3.537,0,0,0-5-.718l-1.224.937a.165.165,0,1,1-.2-.263l1.224-.937a3.869,3.869,0,0,1,5.466.778l30.137,36.688-.042.094-15.4,34.339A.165.165,0,0,1,3306.5,533.851Z"
+                                        transform="translate(-3178.421 -459.141)" fill="#72abff"></path>
+                                    <circle id="Ellipse_460" cx="1.687" cy="1.687" r="1.687"
+                                        transform="translate(141.3 38.7)" fill="#fff"></circle>
+                                    <path id="Ellipse_460_-_Outline"
+                                        d="M-1.148-3A1.854,1.854,0,0,1,.7-1.148,1.854,1.854,0,0,1-1.148.7,1.854,1.854,0,0,1-3-1.148,1.854,1.854,0,0,1-1.148-3Zm0,3.374A1.523,1.523,0,0,0,.374-1.148,1.523,1.523,0,0,0-1.148-2.669,1.523,1.523,0,0,0-2.669-1.148,1.523,1.523,0,0,0-1.148.374Z"
+                                        transform="translate(144.135 41.535)" fill="#ffcf2d"></path>
+                                    <path id="Path_7024"
+                                        d="M3520.584,1708.9h8.22a4.279,4.279,0,0,1,4.278,4.278v.121H3516.3v-.121A4.286,4.286,0,0,1,3520.584,1708.9Z"
+                                        transform="translate(-3396.782 -1638.192)" fill="#fff"></path>
+                                    <path id="Path_7024_-_Outline"
+                                        d="M3517.749,1705.9h8.22a4.448,4.448,0,0,1,4.443,4.443v.287H3513.3v-.287A4.459,4.459,0,0,1,3517.749,1705.9Zm12.332,4.4a4.117,4.117,0,0,0-4.112-4.068h-8.22a4.127,4.127,0,0,0-4.118,4.068Z"
+                                        transform="translate(-3393.947 -1635.358)" fill="#ffcf2d"></path>
+                                    <path id="Line_423"
+                                        d="M143.514-2.669H-2.835A.165.165,0,0,1-3-2.835.165.165,0,0,1-2.835-3H143.514a.165.165,0,0,1,.165.165A.165.165,0,0,1,143.514-2.669Z"
+                                        transform="translate(3 77.942)" fill="#72abff"></path>
+                                    <path id="Path_7061"
+                                        d="M1448.266,1806.2v68.061h-3.842v-12.955a2.19,2.19,0,0,0-2.189-2.189h-27.5a2.191,2.191,0,0,0-2.189,2.189v12.955H1408.7V1806.2Z"
+                                        transform="translate(-1405.37 -1730.128)" fill="#fff"></path>
+                                    <path id="Path_7061_-_Outline"
+                                        d="M1405.7,1803.2h39.9v68.392h-4.173v-13.12a2.026,2.026,0,0,0-2.023-2.023h-27.5a2.025,2.025,0,0,0-2.023,2.023v13.12H1405.7Zm39.565.331h-39.234v67.73h3.511v-12.79a2.357,2.357,0,0,1,2.354-2.354h27.5a2.357,2.357,0,0,1,2.354,2.354v12.79h3.512Z"
+                                        transform="translate(-1402.535 -1727.294)" fill="#72abff"></path>
+                                    <path id="Path_7062" d="M1448.381,1806.2v18.06l-39.681,32.675.005-50.734Z"
+                                        transform="translate(-1405.369 -1730.128)" fill="#ededed"></path>
+                                    <path id="Path_7063"
+                                        d="M1477.738,1859.6h27.729a2.241,2.241,0,0,1,2.238,2.238v12.343a2.241,2.241,0,0,1-2.238,2.238h-27.729a2.241,2.241,0,0,1-2.238-2.238v-12.343A2.241,2.241,0,0,1,1477.738,1859.6Zm27.729,16.489a1.91,1.91,0,0,0,1.907-1.907v-12.343a1.91,1.91,0,0,0-1.907-1.907h-27.729a1.91,1.91,0,0,0-1.907,1.907v12.343a1.91,1.91,0,0,0,1.907,1.907Z"
+                                        transform="translate(-1468.486 -1780.584)" fill="#72abff"></path>
+                                    <path id="Path_7064" d="M1651.818,2264.309h-13.65l-.568-3.909h13.655Z"
+                                        transform="translate(-1621.65 -2159.289)" fill="#66b0f0"></path>
+                                    <path id="Path_7065"
+                                        d="M1775.7,2219.5a3.08,3.08,0,0,0-3.082,3.082v3.082H1761v-3.082a3.08,3.08,0,0,1,3.082-3.082Z"
+                                        transform="translate(-1738.248 -2120.645)" fill="#fff"></path>
+                                    <path id="Path_7065_-_Outline"
+                                        d="M1761.247,2216.5h11.616v.331a2.92,2.92,0,0,0-2.916,2.917v3.247H1758v-3.247A3.251,3.251,0,0,1,1761.247,2216.5Zm10.188.331h-10.188a2.92,2.92,0,0,0-2.916,2.917v2.916h11.285v-2.916A3.252,3.252,0,0,1,1771.435,2216.831Z"
+                                        transform="translate(-1735.413 -2117.809)" fill="#72abff"></path>
+                                    <path id="Path_7066"
+                                        d="M1830.087,2221.755h-11.615a3.08,3.08,0,0,0-2.971-2.255h11.615A3.085,3.085,0,0,1,1830.087,2221.755Z"
+                                        transform="translate(-1789.743 -2120.645)" fill="#fff"></path>
+                                    <path id="Path_7066_-_Outline"
+                                        d="M1830.305,2219.086h-11.959l-.033-.121a2.919,2.919,0,0,0-2.812-2.134v-.331h11.615a3.262,3.262,0,0,1,3.131,2.376Zm-11.71-.331h11.265a2.932,2.932,0,0,0-2.745-1.924h-10.187A3.244,3.244,0,0,1,1818.6,2218.755Z"
+                                        transform="translate(-1789.743 -2117.809)" fill="#72abff"></path>
+                                    <path id="Path_7067"
+                                        d="M1477.738,2328.3h27.729a2.241,2.241,0,0,1,2.238,2.238v12.343a2.241,2.241,0,0,1-2.238,2.238h-27.729a2.24,2.24,0,0,1-2.238-2.238v-12.343A2.241,2.241,0,0,1,1477.738,2328.3Zm27.729,16.489a1.91,1.91,0,0,0,1.907-1.907v-12.343a1.91,1.91,0,0,0-1.907-1.907h-27.729a1.91,1.91,0,0,0-1.907,1.907v12.343a1.91,1.91,0,0,0,1.907,1.907Z"
+                                        transform="translate(-1468.486 -2223.446)" fill="#72abff"></path>
+                                    <path id="Path_7068"
+                                        d="M1673.127,1974.512a.166.166,0,0,1-.165-.165,1.617,1.617,0,0,0-1.615-1.615h-7.8a1.617,1.617,0,0,0-1.615,1.615.165.165,0,0,1-.331,0,1.948,1.948,0,0,1,1.946-1.946h7.8a1.948,1.948,0,0,1,1.946,1.946A.165.165,0,0,1,1673.127,1974.512Z"
+                                        transform="translate(-1644.327 -1887.167)" fill="#72abff"></path>
+                                    <path id="Path_7069"
+                                        d="M1673.127,2443.211a.165.165,0,0,1-.165-.165,1.617,1.617,0,0,0-1.615-1.615h-7.8a1.617,1.617,0,0,0-1.615,1.615.165.165,0,0,1-.331,0,1.949,1.949,0,0,1,1.946-1.946h7.8a1.949,1.949,0,0,1,1.946,1.946A.165.165,0,0,1,1673.127,2443.211Z"
+                                        transform="translate(-1644.327 -2330.027)" fill="#72abff"></path>
+                                    <rect id="Rectangle_3706" width="4.096" height="68.21"
+                                        transform="translate(132.204 76.072)" fill="#fff"></rect>
+                                    <path id="Rectangle_3706_-_Outline"
+                                        d="M-3-3H1.427V65.541H-3Zm4.1.331H-2.669V65.21H1.1Z"
+                                        transform="translate(135.039 78.906)" fill="#72abff"></path>
+                                </g>
+                                <g id="BOY" transform="translate(114.2 31.087)">
+                                    <path id="PAPER_1_" d="M2298.8,1268.683h16.47v14.146H2298.8Z"
+                                        transform="translate(-2298.8 -1222.947)" fill="#ffeeb4"></path>
+                                    <g id="BOY_1_" transform="translate(3.655)">
+                                        <g id="LEGS_1_" transform="translate(22.431 61.887)">
+                                            <g id="Group_14363" transform="translate(14.488)">
+                                                <path id="Path_6494" d="M3185.958,2048.87l-7.658-19.07h12.331Z"
+                                                    transform="translate(-3164.945 -1999.294)" fill="#8ebcff"></path>
+                                                <path id="Path_6495"
+                                                    d="M2960.5,1537.353h0a9.49,9.49,0,0,1,8.388-5.053h9.485l6.445,5.053Z"
+                                                    transform="translate(-2960.5 -1532.3)" fill="#8ebcff"></path>
+                                            </g>
+                                            <g id="Group_14368" transform="translate(0 4.666)">
+                                                <g id="Group_14365" transform="translate(0 0)">
+                                                    <path id="Path_6496"
+                                                        d="M2774.677,1637.026h-23.9l9,21.835c-.625-1.018-4.372.043-8.339,2.477-3.918,2.4-6.567,5.3-6.027,6.352l-19.389-33.737a12.76,12.76,0,0,1,10.988-19.254h53.549l.117.368A16.806,16.806,0,0,1,2774.677,1637.026Z"
+                                                        transform="translate(-2724.227 -1614.314)" fill="#9fc6ff">
+                                                    </path>
+                                                    <path id="Path_6497"
+                                                        d="M3371.659,1621.055a16.574,16.574,0,0,1-1.275,5.7L3342.3,1614.8h27.875l.65,1.9A16.058,16.058,0,0,1,3371.659,1621.055Z"
+                                                        transform="translate(-3304.401 -1614.408)" fill="#e6e6e6">
+                                                    </path>
+                                                    <path id="Path_6498"
+                                                        d="M3083.057,2329.158c.626,1.018-2.109,3.8-6.07,6.23s-7.652,3.655-8.278,2.637,2.042-3.894,6.009-6.328S3082.425,2328.14,3083.057,2329.158Z"
+                                                        transform="translate(-3047.5 -2284.61)" fill="#9fc6ff"></path>
+                                                    <g id="Group_14364" transform="translate(8.661)">
+                                                        <path id="Path_6499"
+                                                            d="M2883.6,1685.344a.184.184,0,0,0,.16-.275l-17.438-30.831a3.481,3.481,0,0,1,3.034-5.183h33.964a7.386,7.386,0,0,0,7.225-8.911.184.184,0,1,0-.36.076,7.019,7.019,0,0,1-6.865,8.467h-33.964a3.849,3.849,0,0,0-3.355,5.731l17.439,30.831A.184.184,0,0,0,2883.6,1685.344Z"
+                                                            transform="translate(-2865.501 -1638.062)" fill="#72abff">
+                                                        </path>
+                                                        <path id="Path_6500"
+                                                            d="M3062.609,2333.511a.184.184,0,0,0,.156-.28.692.692,0,0,1-.025-.528c.33-1.315,2.729-3.875,6.173-5.883,4.618-2.69,7.485-3.428,8.293-2.134a.184.184,0,0,0,.313-.195c-.945-1.514-3.9-.837-8.79,2.011-3.66,2.134-6,4.741-6.344,6.111a1.033,1.033,0,0,0,.068.81A.185.185,0,0,0,3062.609,2333.511Z"
+                                                            transform="translate(-3050.264 -2279.845)" fill="#72abff">
+                                                        </path>
+                                                        <path id="Line_341"
+                                                            d="M8.576,24.531a.184.184,0,0,0,.17-.255L-2.647-2.888a.184.184,0,0,0-.241-.1.184.184,0,0,0-.1.241L8.406,24.418A.184.184,0,0,0,8.576,24.531Z"
+                                                            transform="translate(18.656 20.532)" fill="#72abff"></path>
+                                                        <path id="Line_342" d="M0-2.632H27.8V-3H0Z"
+                                                            transform="translate(3.454 3)" fill="#72abff"></path>
+                                                    </g>
+                                                </g>
+                                                <g id="Group_14366" transform="translate(23.9 44.253)">
+                                                    <path id="Path_6501"
+                                                        d="M3117.937,2340.665l-1.656-2.257-2.281-3.1a27.709,27.709,0,0,1,3.311-2.373,21.094,21.094,0,0,1,6.512-2.833l1.109,2.214,1.386,2.759C3125.338,2338.562,3117.937,2340.665,3117.937,2340.665Z"
+                                                        transform="translate(-3114 -2330.1)" fill="#f2d7ce"></path>
+                                                    <path id="Path_6502"
+                                                        d="M3125.033,2332.313a22.661,22.661,0,0,1-5.353,4.311,32.408,32.408,0,0,1-3.3,1.784l-2.281-3.1a27.717,27.717,0,0,1,3.311-2.372,21.082,21.082,0,0,1,6.512-2.833Z"
+                                                        transform="translate(-3114.094 -2330.1)" fill="#5395f5"></path>
+                                                </g>
+                                                <g id="Group_14367" transform="translate(23.408 48.919)">
+                                                    <path id="Path_6503"
+                                                        d="M3129.173,2423.266l-16.826,12.085c-1.428.994-3.649,1.821-3.354-1.772.411-4.954,1.508-12.325,4.219-16.887h0c.116-.031,7.4-2.134,8.382-5.592l7.671,5.451A4.208,4.208,0,0,1,3129.173,2423.266Z"
+                                                        transform="translate(-3108.783 -2410.8)" fill="#fff"></path>
+                                                    <path id="Path_6503_-_Outline"
+                                                        d="M3118.672,2406.193l-.071.251c-.958,3.379-8.18,5.445-8.252,5.465l-.072.02-.039.064c-2.868,4.829-3.89,12.7-4.243,16.966a3.222,3.222,0,0,0,.475,2.423,1.265,1.265,0,0,0,.973.4,4.427,4.427,0,0,0,2.195-.885l16.827-12.088a4.391,4.391,0,0,0,.1-7.009Zm-8.155,6.05c.764-.224,7.152-2.2,8.358-5.454l7.467,5.307a4.023,4.023,0,0,1-.094,6.416l-16.824,12.084a4.078,4.078,0,0,1-1.982.818.9.9,0,0,1-.7-.281,2.918,2.918,0,0,1-.379-2.145C3106.709,2424.775,3107.714,2417.014,3110.517,2412.243Z"
+                                                        transform="translate(-3105.967 -2406.193)" fill="#ffcf2d">
+                                                    </path>
+                                                    <path id="Path_6504"
+                                                        d="M3162.875,2426.094c1.856,0,8.859-2.672,9.991-6.66a.184.184,0,1,0-.354-.1c-1.11,3.909-8.479,6.629-9.8,6.382a.184.184,0,1,0-.068.361A1.223,1.223,0,0,0,3162.875,2426.094Z"
+                                                        transform="translate(-3159.033 -2418.402)" fill="#ffcf2d">
+                                                    </path>
+                                                    <path id="Path_6505"
+                                                        d="M3121.635,2565.363s10.982-15.256,18.794-14.4C3148.933,2551.892,3114.681,2574.26,3121.635,2565.363Z"
+                                                        transform="translate(-3119.794 -2542.056)" fill="#ffcf2d">
+                                                    </path>
+                                                    <path id="Path_6506"
+                                                        d="M3110.837,2549.757l.081,0a.184.184,0,1,0-.024-.367.862.862,0,0,1-.82-.45c-.237-.449-.067-1.1.468-1.785.118-.163,11.465-15.728,19.4-14.855a1.438,1.438,0,0,1,1.113.612,1.381,1.381,0,0,1,.118,1.189.184.184,0,0,0,.349.116,1.744,1.744,0,0,0-.158-1.5,1.772,1.772,0,0,0-1.382-.779c-3.432-.378-7.8,2.038-12.984,7.179a71.72,71.72,0,0,0-6.751,7.821c-.856,1.1-.68,1.836-.5,2.178A1.228,1.228,0,0,0,3110.837,2549.757Z"
+                                                        transform="translate(-3109.378 -2524.185)" fill="#ffcf2d">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g id="T-SHIRT" transform="translate(43.124 21.963)">
+                                            <path id="Path_6507"
+                                                d="M3111.518,936.495c-3.887-.92-13.563-3.342-24.6-5.893a17.242,17.242,0,0,1-11.767-9.56L3065.1,899.3l6.083-9.639a10.911,10.911,0,0,1,8.56-5.071l5.984-.368c6.034-.368,10.878,3.4,12.718,9.155l12.172,35.614A18.286,18.286,0,0,1,3111.518,936.495Z"
+                                                transform="translate(-3064.892 -884.012)" fill="#e3ffcb"></path>
+                                            <path id="Path_6507_-_Outline"
+                                                d="M3108.933,933.906l.022-.208a18.629,18.629,0,0,0-.914-7.593l-12.168-35.6c-1.833-5.738-6.464-9.3-12.083-9.3q-.405,0-.819.025l-5.985.368a11.116,11.116,0,0,0-8.7,5.157l-6.136,9.724,10.092,21.834a17.312,17.312,0,0,0,11.893,9.662c7.623,1.762,14.467,3.43,19.463,4.649,2.178.531,3.934.959,5.137,1.244Zm-25.143-52.342c5.454,0,9.951,3.468,11.734,9.052l12.173,35.617a17.92,17.92,0,0,1,.91,7.218c-1.193-.283-2.871-.693-4.927-1.194-5-1.219-11.842-2.887-19.468-4.65a16.947,16.947,0,0,1-11.642-9.458L3062.563,896.5l6.03-9.555a10.748,10.748,0,0,1,8.416-4.986l5.985-.368C3083.261,881.572,3083.527,881.564,3083.79,881.564Z"
+                                                transform="translate(-3062.146 -881.196)" fill="#72abff"></path>
+                                            <path id="Path_6508"
+                                                d="M3161.568,1155.208l.055-.364a15.505,15.505,0,0,1-10.364-6.055l-.311.2A15.908,15.908,0,0,0,3161.568,1155.208Z"
+                                                transform="translate(-3145.603 -1132.381)" fill="#72abff"></path>
+                                        </g>
+                                        <g id="HEAD_2_" transform="translate(46.313)">
+                                            <g id="NECK_1_" transform="translate(5.512 12.017)">
+                                                <path id="Path_6534"
+                                                    d="M3216.146,729.046l-.411.018-5.984.368a10.84,10.84,0,0,0-4.311,1.183l-1.839-5.506,8.2-6.009Z"
+                                                    transform="translate(-3203.6 -719.094)" fill="#f2d7ce"></path>
+                                                <path id="Path_6535"
+                                                    d="M3205.415,730.436h0a7.722,7.722,0,0,0,3.838-3.851l2.98-6.592L3211.8,719l-8.2,6.009Z"
+                                                    transform="translate(-3203.6 -719)" fill="#eac2b5"></path>
+                                            </g>
+                                            <g id="HEAD_3_" transform="translate(0.273 5.134)">
+                                                <path id="Path_6536"
+                                                    d="M3132.12,614.179a2.072,2.072,0,0,1-2.066,2.066h-1.8a5.637,5.637,0,0,1-6.426,4.139l-1.355-.239a2.8,2.8,0,0,1-2.287-3.139l1.588-7.953a2.754,2.754,0,0,1,3.648-2.152l2.63,1.055a3.525,3.525,0,0,1,2.379,3.33v.766l1.625.061A2.067,2.067,0,0,1,3132.12,614.179Z"
+                                                    transform="translate(-3118.156 -606.737)" fill="#f2d7ce"></path>
+                                                <g id="Group_14370" transform="translate(2.498 3.836)">
+                                                    <path id="Path_6537"
+                                                        d="M3293.754,710.535a.154.154,0,0,0,.153-.153,1.273,1.273,0,0,1,1.275-1.276.153.153,0,0,0,0-.307,1.579,1.579,0,0,0-1.583,1.582A.154.154,0,0,0,3293.754,710.535Z"
+                                                        transform="translate(-3285.34 -706.378)" fill="#efae99"></path>
+                                                    <path id="Path_6538"
+                                                        d="M3158.608,670.839a.152.152,0,0,0,.092-.03.154.154,0,0,0,.031-.215,3.329,3.329,0,0,0-.769-.747,3.176,3.176,0,0,0-.752-.384,2.662,2.662,0,0,0-.81-.163v.307h0a2.431,2.431,0,0,1,.72.15,2.872,2.872,0,0,1,.674.348,3.025,3.025,0,0,1,.691.673A.152.152,0,0,0,3158.608,670.839Z"
+                                                        transform="translate(-3156.4 -669.3)" fill="#efae99"></path>
+                                                    <ellipse id="Ellipse_333" cx="0.656" cy="0.307" rx="0.656"
+                                                        ry="0.307" transform="translate(0.136 2.984) rotate(-79.7)"
+                                                        fill="#efae99"></ellipse>
+                                                </g>
+                                            </g>
+                                            <g id="HAIR_1_" transform="translate(0)">
+                                                <path id="Path_6539"
+                                                    d="M3125.871,533.526a2.067,2.067,0,0,1,2.066,2.066v.031c.92-1.416,3.176-5.022,3.176-6.242a3.091,3.091,0,0,0-4.157-2.526q.212-.156.441-.331c.815-.638,1.245-1.116,1.312-1.459a.4.4,0,0,0-.055-.319.829.829,0,0,0-.8-.454c-.423.067-.858.589-1.294,1.545a11.475,11.475,0,0,0-.435,1.128c-.172-1.024-1-4.415-4.556-3.894-1.226.178-1.8.687-1.962,1.245-1.018-.8-2.379-1.423-3.507-.828-1.95,1.024-1.711,2.7-.583,3.894-1.067-.018-1.815.294-1.815,1.2,0,.828.852,1.226,2.023,1.386a17.352,17.352,0,0,0,3.973-.074c.926-.1,1.76-.233,2.293-.325a3.855,3.855,0,0,0-.466,1.883,2.139,2.139,0,0,0,1.962,1.962,4.962,4.962,0,0,0,.76.092Zm2.017-8.989a.192.192,0,0,1,.062-.006c.171,0,.337.123.5.356a.182.182,0,0,1,.018.129c-.1.5-1.355,1.441-2.085,1.938C3126.674,526.107,3127.281,524.641,3127.888,524.537Z"
+                                                    transform="translate(-3113.7 -523.018)" fill="#525252"></path>
+                                                <g id="Group_14371" transform="translate(5.732 1.162)">
+                                                    <path id="Path_6540"
+                                                        d="M3208.73,544.135a1.516,1.516,0,0,1-1.165-.625,1.6,1.6,0,0,1-.319-1.459.122.122,0,0,1,.141-.086.092.092,0,0,1,.067.025c.926.662,1.668,1.606,1.557,1.981a.216.216,0,0,1-.208.166Zm-1.288-1.852a1.405,1.405,0,0,0,.313,1.073,1.246,1.246,0,0,0,1.024.527A3.418,3.418,0,0,0,3207.443,542.283Z"
+                                                        transform="translate(-3207.184 -541.962)" fill="#7c7b7b"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g id="HANDS" transform="translate(0 11.398)">
+                                            <g id="LEFT_1_" transform="translate(0 28.642)">
+                                                <path id="Path_6541"
+                                                    d="M2415.445,1279.8H2376.2a1.227,1.227,0,0,1-1.036-1.882l5.224-8.2A3.692,3.692,0,0,1,2383.5,1268h26.563Z"
+                                                    transform="translate(-2373.958 -1262.359)" fill="#f2d7ce"></path>
+                                                <path id="Path_6542"
+                                                    d="M2528.2,1181.647l3.127-5.151a1.03,1.03,0,0,1,.877-.5h0a1.027,1.027,0,0,1,.876,1.564l-2.483,4.084Z"
+                                                    transform="translate(-2517.789 -1176)" fill="#acfab8"></path>
+                                                <path id="Path_6543"
+                                                    d="M2862.394,1279.8h-8.824l-.061-.061a8.338,8.338,0,0,1-1.852-8.781l1.257-2.955h4.1Z"
+                                                    transform="translate(-2820.907 -1262.359)" fill="#eac2b5"></path>
+                                                <path id="Path_6544"
+                                                    d="M2387.971,1370.6h-4.917a.927.927,0,0,0-.8.466l-.521.908a.923.923,0,0,0,.8,1.38h3.955a1.979,1.979,0,0,0,1.687-.944l.423-.693A.735.735,0,0,0,2387.971,1370.6Z"
+                                                    transform="translate(-2380.185 -1358.667)" fill="#f2d7ce"></path>
+                                                <path id="Path_6545"
+                                                    d="M2367.272,1415.5h-4.918a.927.927,0,0,0-.8.466l-.521.908a.923.923,0,0,0,.8,1.38h3.955a1.978,1.978,0,0,0,1.687-.944l.423-.693A.733.733,0,0,0,2367.272,1415.5Z"
+                                                    transform="translate(-2360.754 -1400.815)" fill="#f2d7ce"></path>
+                                                <path id="Path_6546"
+                                                    d="M2410.872,1325.1h-4.917a.927.927,0,0,0-.8.466l-.521.907a.923.923,0,0,0,.8,1.38h3.955a1.978,1.978,0,0,0,1.686-.944l.423-.693A.733.733,0,0,0,2410.872,1325.1Z"
+                                                    transform="translate(-2401.681 -1315.957)" fill="#f2d7ce"></path>
+                                                <path id="Path_6547"
+                                                    d="M2385.625,1368.1h-4.918a1.081,1.081,0,0,0-.936.543l-.521.908a1.067,1.067,0,0,0-.142.554,1.075,1.075,0,0,0,1.079,1.055h3.955a2.132,2.132,0,0,0,1.817-1.017h0l.424-.694a.893.893,0,0,0-.3-1.221A.88.88,0,0,0,2385.625,1368.1Zm-6.109,1.6.521-.907a.775.775,0,0,1,.67-.389h4.918a.57.57,0,0,1,.5.293.58.58,0,0,1-.007.59l-.423.692a1.824,1.824,0,0,1-1.555.871h-3.955a.76.76,0,0,1-.4-.107.778.778,0,0,1-.271-.276A.762.762,0,0,1,2379.516,1369.7Z"
+                                                    transform="translate(-2377.838 -1356.321)" fill="#efae99"></path>
+                                                <path id="Path_6548"
+                                                    d="M2364.925,1413h-4.918a1.081,1.081,0,0,0-.936.543l-.521.908a1.075,1.075,0,0,0,.937,1.609h3.955a2.13,2.13,0,0,0,1.817-1.017h0l.423-.693a.877.877,0,0,0,.018-.9.9.9,0,0,0-.313-.326A.885.885,0,0,0,2364.925,1413Zm-6.109,1.6.521-.907a.775.775,0,0,1,.67-.389h4.918a.58.58,0,0,1,.495.883l-.423.693a1.824,1.824,0,0,1-1.556.871h-3.955a.761.761,0,0,1-.4-.107.777.777,0,0,1-.271-.276A.763.763,0,0,1,2358.816,1414.6Z"
+                                                    transform="translate(-2358.408 -1398.468)" fill="#efae99"></path>
+                                                <path id="Path_6549"
+                                                    d="M2408.526,1322.6h-4.918a1.078,1.078,0,0,0-.541.146,1.09,1.09,0,0,0-.4.4l-.521.908a1.072,1.072,0,0,0-.142.554,1.075,1.075,0,0,0,1.078,1.055h3.955a2.131,2.131,0,0,0,1.817-1.017h0l.423-.693a.886.886,0,0,0-.757-1.349Zm-6.109,1.6.521-.907a.775.775,0,0,1,.67-.389h4.918a.58.58,0,0,1,.495.883l-.423.693a1.824,1.824,0,0,1-1.556.871h-3.955a.758.758,0,0,1-.4-.107.774.774,0,0,1-.271-.276.761.761,0,0,1,0-.767Z"
+                                                    transform="translate(-2399.334 -1313.611)" fill="#efae99"></path>
+                                                <path id="Path_6550"
+                                                    d="M2435.616,1309.114a6.094,6.094,0,0,1-4.016-1.508l-1.864-1.631h-1.717l-.441.472a3.9,3.9,0,0,1-2.925,1.331h-.822a.546.546,0,0,1-.46-.84l2.066-3.238h10.185v5.414Z"
+                                                    transform="translate(-2419.306 -1295.87)" fill="#f2d7ce"></path>
+                                                <path id="Path_6551"
+                                                    d="M2433.269,1306.921a.153.153,0,1,0,0-.307,5.953,5.953,0,0,1-2.093-.381,5.974,5.974,0,0,1-1.823-1.09l-1.907-1.669H2425.6l-.487.521a4.117,4.117,0,0,1-1.277.95,3.528,3.528,0,0,1-.734.247,3.768,3.768,0,0,1-.8.085h-.822a.393.393,0,0,1-.331-.6h0l2.067-3.238a.153.153,0,0,0-.259-.165l-2.066,3.237a.691.691,0,0,0-.111.364.7.7,0,0,0,.7.712h.822a3.926,3.926,0,0,0,1.665-.36,4.417,4.417,0,0,0,1.372-1.019l.4-.423h1.593l1.821,1.593a6.264,6.264,0,0,0,4.117,1.546Z"
+                                                    transform="translate(-2416.959 -1293.523)" fill="#efae99"></path>
+                                            </g>
+                                            <g id="RIGHT_1_" transform="translate(32.241 0)">
+                                                <path id="Path_6552"
+                                                    d="M2909.678,743.674l-9.364,10.461a10.378,10.378,0,0,1-7.738,3.458h0a8.36,8.36,0,0,1-7.83-11.295l11.123-26.134-3.759-2.1a1.835,1.835,0,0,1-.675-1.76l.638-4.3a2.8,2.8,0,0,1,2.122-1.925l4.4-.993a.539.539,0,0,1,.656.607l-.638,3.317a2.877,2.877,0,0,0,2.459,3.293h0a2.705,2.705,0,0,1,2.134,2.894l-3,18.7A14.288,14.288,0,0,0,2909.678,743.674Z"
+                                                    transform="translate(-2884.208 -709.06)" fill="#f2d7ce"></path>
+                                                <path id="Line_343"
+                                                    d="M-2.347,21.3a.153.153,0,0,0,.151-.13L1.422-2.324A.153.153,0,0,0,1.294-2.5a.153.153,0,0,0-.175.128L-2.5,21.121a.153.153,0,0,0,.128.175Z"
+                                                    transform="translate(17.02 16.928)" fill="#efae99"></path>
+                                                <path id="Path_6553"
+                                                    d="M3063.573,763.8a.153.153,0,0,0,.031-.3l-5.629-1.139a.973.973,0,0,1-.314-.158,1.089,1.089,0,0,1-.252-.267,1.227,1.227,0,0,1-.162-.349,1.306,1.306,0,0,1-.05-.4l.049-1.52a.153.153,0,0,0-.148-.158h0a.153.153,0,0,0-.153.148l-.05,1.521a1.62,1.62,0,0,0,.063.5,1.521,1.521,0,0,0,.2.435,1.4,1.4,0,0,0,.322.341,1.283,1.283,0,0,0,.42.209l.006,0h.006l5.635,1.141A.154.154,0,0,0,3063.573,763.8Z"
+                                                    transform="translate(-3046.3 -756.397)" fill="#efae99"></path>
+                                                <path id="Path_6554"
+                                                    d="M3052.4,716.792a.153.153,0,0,0,.02-.305l-4.5-.6a2.652,2.652,0,0,1-2.1-1.944,2.613,2.613,0,0,1-.058-1.02l.582-3.327a.591.591,0,0,0-.72-.678l-4.6,1.073a.153.153,0,1,0,.069.3l4.6-1.073a.285.285,0,0,1,.347.327l-.584,3.335a2.952,2.952,0,0,0,2.412,3.312h.007l4.507.6Z"
+                                                    transform="translate(-3031.292 -708.9)" fill="#efae99"></path>
+                                                <path id="Line_344"
+                                                    d="M-1.958,11.8,10.232-1.759l-.274-.246L-2.231,11.558Z"
+                                                    transform="translate(20.71 30.573)" fill="#72abff"></path>
+                                                <path id="Line_345"
+                                                    d="M-2.347-2.193H-.194a.153.153,0,0,0,.153-.153A.153.153,0,0,0-.194-2.5H-2.347a.153.153,0,0,0-.153.153A.153.153,0,0,0-2.347-2.193Z"
+                                                    transform="translate(14.138 13.458)" fill="#efae99"></path>
+                                                <path id="Path_6555"
+                                                    d="M3058.9,722.593h.674a.647.647,0,0,0,.489-.225.785.785,0,0,0,.192-.522l.043-3.2a.8.8,0,0,0-.088-.379.862.862,0,0,0-.234-.282.974.974,0,0,0-.818-.189.153.153,0,0,0,.072.3.623.623,0,0,1,.289,0,.685.685,0,0,1,.266.128.521.521,0,0,1,.206.418l-.043,3.2a.48.48,0,0,1-.115.32.345.345,0,0,1-.259.121h-.674a.737.737,0,0,1-.553-.26.929.929,0,0,1-.174-.29,1.014,1.014,0,0,1-.064-.357v-.491a.153.153,0,0,0-.307,0v.491A1.162,1.162,0,0,0,3058.9,722.593Z"
+                                                    transform="translate(-3047.156 -717.228)" fill="#efae99"></path>
+                                                <path id="Path_6556"
+                                                    d="M3094.6,767.958h.429a.153.153,0,0,0,0-.307h-.429a.737.737,0,0,1-.553-.26.927.927,0,0,1-.174-.29,1.014,1.014,0,0,1-.064-.357v-.491a.153.153,0,0,0-.307,0v.491A1.162,1.162,0,0,0,3094.6,767.958Z"
+                                                    transform="translate(-3080.667 -762.592)" fill="#efae99"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="CHAIR_1_" transform="translate(51.749 89.266)">
+                                        <path id="Line_346" d="M4.14,58.931l.365-.044L-2.613-.358l-.365.044Z"
+                                            transform="translate(40.651 3.463)" fill="#66b0f0"></path>
+                                        <path id="Subtraction_1" d="M6.226,0H5.855L0,59.237l.365.053L6.226,0Z"
+                                            transform="translate(6.226 62.395) rotate(180)" fill="#66b0f0"></path>
+                                        <path id="Line_348" d="M0-2.632H40.206V-3H0Z"
+                                            transform="translate(2.321 44.843)" fill="#66b0f0"></path>
+                                        <path id="Path_6557"
+                                            d="M3175.732,1984.927h38.691a.932.932,0,0,0,.932-.932v-1.263a.932.932,0,0,0-.932-.932h-38.691a.932.932,0,0,0-.932.932V1984A.932.932,0,0,0,3175.732,1984.927Z"
+                                            transform="translate(-3172.834 -1981.616)" fill="#fff"></path>
+                                        <path id="Path_6557_-_Outline"
+                                            d="M3172.916,1982.3h38.692a1.117,1.117,0,0,0,1.116-1.116v-1.263a1.117,1.117,0,0,0-1.116-1.116h-38.692a1.117,1.117,0,0,0-1.116,1.116v1.263A1.117,1.117,0,0,0,3172.916,1982.3Zm38.692-3.127a.749.749,0,0,1,.748.748v1.263a.749.749,0,0,1-.748.748h-38.692a.749.749,0,0,1-.748-.748v-1.263a.749.749,0,0,1,.748-.748Z"
+                                            transform="translate(-3170.019 -1978.8)" fill="#66b0f0"></path>
+                                    </g>
+                                </g>
+                                <g id="Group_18097" transform="translate(27.291 63.792)">
+                                    <path id="Path_7075"
+                                        d="M1623.736,1553.26H1619.7C1620.632,1547.422,1623.736,1549.617,1623.736,1553.26Z"
+                                        transform="translate(-1607.158 -1535.751)" fill="#72abff"></path>
+                                    <g id="Group_18097-2" transform="translate(0 0)">
+                                        <path id="Path_7070"
+                                            d="M1407.576,1317.952H1405.1s-3.534-14.725-6.637-15.2-3.264,5.188-3.264,5.188.055-8.616,7.812-7.437S1407.576,1317.952,1407.576,1317.952Z"
+                                            transform="translate(-1395.034 -1300.222)" fill="#fff"></path>
+                                        <path id="Path_7070_-_Outline"
+                                            d="M1404.878,1315.282h-2.742l-.03-.127c-1.213-5.056-4.134-14.714-6.5-15.08a2.207,2.207,0,0,0-.338-.027c-2.562,0-2.733,5.005-2.735,5.056l-.331-.006c0-.014,0-.3.055-.744a10.229,10.229,0,0,1,.573-2.53,6.034,6.034,0,0,1,5.951-4.438,9.488,9.488,0,0,1,1.423.113,5.036,5.036,0,0,1,3.462,2.184c3.306,4.7,1.326,15.027,1.24,15.464Zm-2.481-.331h2.208c.224-1.242,1.816-10.774-1.211-15.077a4.717,4.717,0,0,0-3.241-2.048,9.2,9.2,0,0,0-1.373-.109,5.405,5.405,0,0,0-4.741,2.384,2.14,2.14,0,0,1,1.616-.353C1398.711,1300.222,1402.02,1313.41,1402.4,1314.952Z"
+                                            transform="translate(-1392.2 -1297.387)" fill="#72abff"></path>
+                                        <path id="Path_7071"
+                                            d="M1470.461,1321.346a.166.166,0,0,1-.165-.163c-.18-10.964-2.5-14.838-4.418-16.158a3.163,3.163,0,0,0-2.752-.548.165.165,0,0,1-.114-.31,3.483,3.483,0,0,1,3.043.578c1.985,1.359,4.39,5.313,4.572,16.432a.165.165,0,0,1-.163.168Z"
+                                            transform="translate(-1459.005 -1303.672)" fill="#72abff"></path>
+                                        <rect id="Rectangle_3707" width="11.627" height="9.466"
+                                            transform="translate(7.657 17.51)" fill="#f2c11d"></rect>
+                                        <path id="Path_7072"
+                                            d="M1628.89,1498.6a3.071,3.071,0,0,1-2.442-.077,4.246,4.246,0,0,1-1.643-1.3,5.407,5.407,0,0,1-1.069-3.363h0c0-3.407-2.712-5.546-3.826-1.036-.077.314-.149.656-.209,1.036v-.033h0a.135.135,0,0,1,.006-.044v-.022a13.331,13.331,0,0,1,.358-2.117,10.021,10.021,0,0,1,.888-2.337,5.936,5.936,0,0,1,.739-1.07,4,4,0,0,1,3.137-1.444c2.547,0,4.41,3,5.121,5.987C1630.571,1495.384,1630.318,1497.98,1628.89,1498.6Z"
+                                            transform="translate(-1607.158 -1476.358)" fill="#fff"></path>
+                                        <path id="Path_7072_-_Outline"
+                                            d="M1624.971,1496.151a3.6,3.6,0,0,1-1.424-.308,4.424,4.424,0,0,1-1.707-1.346,5.592,5.592,0,0,1-1.1-3.464c0-2.025-.95-3.436-1.8-3.436-.7,0-1.314.889-1.7,2.439-.084.341-.151.675-.207,1.023l-.329-.026a.38.38,0,0,1,.014-.129,12.323,12.323,0,0,1,.355-2.127,10.1,10.1,0,0,1,.9-2.376,6.064,6.064,0,0,1,.76-1.1,4.163,4.163,0,0,1,3.261-1.5c2.644,0,4.558,3.071,5.282,6.114.595,2.479.469,5.3-1.153,6.006A2.88,2.88,0,0,1,1624.971,1496.151Zm-6.039-8.885c1.157,0,2.134,1.725,2.134,3.767a5.265,5.265,0,0,0,1.035,3.262,4.091,4.091,0,0,0,1.578,1.245,3.27,3.27,0,0,0,1.292.281,2.547,2.547,0,0,0,1.018-.2c1.233-.538,1.629-2.851.963-5.626-.694-2.917-2.5-5.86-4.96-5.86a3.846,3.846,0,0,0-3.012,1.388,5.721,5.721,0,0,0-.719,1.041,9.213,9.213,0,0,0-.706,1.7C1618.048,1487.427,1618.589,1487.266,1618.932,1487.266Z"
+                                            transform="translate(-1604.323 -1473.524)" fill="#71abff"></path>
+                                        <path id="Path_7073"
+                                            d="M1659.671,1513.557a.165.165,0,0,1-.164-.148c-.8-7.55-2.635-9.888-4.031-10.521a2.431,2.431,0,0,0-2.313.175.165.165,0,0,1-.192-.27,2.766,2.766,0,0,1,2.636-.209c2.148.967,3.57,4.6,4.229,10.789a.165.165,0,0,1-.147.182Z"
+                                            transform="translate(-1638.53 -1491.042)" fill="#72abff"></path>
+                                        <path id="Path_7074"
+                                            d="M1392.194,1347.221c0,.91-.1,4.388,3.214,4.548s3.65-4.851,3.65-4.851-1.632-4.432-3.434-4.884C1392.574,1341.267,1392.194,1347.221,1392.194,1347.221Z"
+                                            transform="translate(-1392.193 -1339.507)" fill="#5395f5"></path>
+                                        <path id="Path_7077"
+                                            d="M1597.426,1601.382a3.026,3.026,0,0,1-2.442-.077v4.642H1586.4l6.946-5.993,1.643-1.417,1.251-1.081,2.42-2.056C1599.366,1598.41,1598.975,1600.67,1597.426,1601.382Z"
+                                            transform="translate(-1575.694 -1578.971)" fill="#fff" opacity="0.4"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <h3>Choose Your Goal</h3>
+                        <button class="btn active" onclick="filterServices('UPSC')">UPSC</button>
+                        <button class="btn" onclick="filterServices('SSC')">SSC</button>
+                        <button class="btn" onclick="filterServices('StatePSC')">State PSC</button>
+                        <button class="btn" onclick="filterServices('Teaching')">Teaching</button>
+                        <button class="btn" onclick="filterServices('RAilway')">RAilway</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 service UPSC active-service">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">IAS Exam</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-4 service UPSC active-service">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">UPSC</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-4 service UPSC active-service">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">IES</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-4 service UPSC active-service">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">UPSC CMS</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 service SSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">SSC CHSL</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service SSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">SSC</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 service SSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">SSC MTS</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 service SSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">BSSC</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 service StatePSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">KPSC</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 service StatePSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Kerala PSC</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 service StatePSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">TNPSC</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 service StatePSC">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">BPSC</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service Teaching">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">KTET</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service Teaching">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">HTET</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service Teaching">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">KSET</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service Teaching">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">UPTET</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service RAilway">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">RRB NTPC</h5>
+
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service RAilway">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">IRMS</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service RAilway">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">RRB Group D</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service RAilway">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">RRB Recruitment</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid hero-section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="hero-content">
+                        <h1>Prepp IAS, One Stop Destination For UPSC CSE Preparation</h1>
+                        <p>Passion-driven mentors & instructors who believe in exam-oriented preparation</p>
+                        <button
+                            style="background-color: yellow; height: 50px; width: 150px; border: none; border-radius: 10px;">Explore
+                            IAS Caurses</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <img src="assets/img/ias-people.webp" alt="" height="500px" width="600px">
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <h1>notifications</h1>
+
+                <div class="card col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">News 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+
+                <div class="card col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">News 2</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+
+                <div class="card col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">News 3</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+
+                <div class="card col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">News 4</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="hero-content">
+                        <h1>Start Your Preparation with Prepp Mobile App</h1>
+                        <p>Download the app from Google Play & App Store</p>
+                        <button
+                            style="background-color: black; height: 50px; width: 150px; border: none; border-radius: 10px; color: white;">
+                            Google Play</button>
+
+                        <button
+                            style="background-color: black; height: 50px; width: 150px; border: none; border-radius: 10px; color: white;">
+                            App Store</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <img src="assets/img/app-banner.webp" alt="" height="500px" width="600px">
+                </div>
+            </div>
+            <div class="container">
+                <footer class="row row-cols-5 py-5 my-5 border-top">
+                  <div class="col">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <p class="text-muted">© 2021</p>
+                  </div>
+              
+                  <div class="col">
+              
+                  </div>
+              
+                  <div class="col">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                  </div>
+              
+                  <div class="col">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                  </div>
+              
+                  <div class="col">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script>
+                document.getElementById("search-icon").addEventListener("click", function () {
+                    document.getElementById("search-popup").classList.toggle("show");
+                });
+
+                document.addEventListener("click", function (event) {
+                    const searchPopup = document.getElementById("search-popup");
+                    const searchIcon = document.getElementById("search-icon");
+                    if (!searchIcon.contains(event.target) && !searchPopup.contains(event.target)) {
+                        searchPopup.classList.remove("show");
+                    }
+                });
+
+
+                function filterServices(serviceType) {
+                    const services = document.querySelectorAll('.service');
+
+                    services.forEach(service => {
+                        if (serviceType === 'all' || service.classList.contains(serviceType)) {
+                            service.classList.add('active-service');
+                        } else {
+                            service.classList.remove('active-service');
+                        }
+                    });
+                }
+            </script>
+</body>
+
+</html>

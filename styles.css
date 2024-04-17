@@ -1,0 +1,206 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navbar horizontally */
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Adjust height as needed */
+}
+
+/* Add these styles to your existing CSS file */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #212529;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Align items vertically */
+}
+
+.nav-links li a:hover {
+ color: rgb(76, 153, 242);
+}
+
+
+
+.nav-links li a .me-1 {
+  margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 10px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+}
+
+.dropdown-item:hover .submenu {
+  display: block;
+}
+
+.nav-links .btn {
+  background-color: yellow;
+  border: none;
+}
+
+.nav-links .btn:hover {
+  background-color: yellow;
+  border: none;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+#search-bar {
+  padding-right: 30px; /* Make space for the search icon */
+}
+
+.search-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 28%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 500px;
+  height: 400px;
+}
+
+.search-popup.show {
+  display: block;
+}
+
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+.hero-section .nda {
+  height: 100px;
+  width: 35%;
+  background-color: white;
+  border-radius: 20px;
+
+}
+.hero-section .nda .date{
+  background-color: yellow;
+  width: 219px;
+    height: 58px;
+    border-radius: 16px;
+}
+.hero-section .cds .date{
+  background-color: yellow;
+  width: 219px;
+    height: 58px;
+    border-radius: 16px;
+}
+
+.hero-section .cds {
+  height: 100px;
+  width: 35%;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.hero-content {
+  margin-bottom: 30px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700 !important;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.hero-image {
+  height: 200px;
+}
+
+.service {
+  display: none;
+}
+
+.active-service {
+  display: block;
+}
+@media (min-width: 992px) {
+  .hero-content {
+      margin-right: 100px;
+  }
+}
